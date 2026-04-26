@@ -11,7 +11,7 @@ class MapsService {
       libraries: ['places'],
     });
 
-    const google = await loader.load();
+    await loader.loadPromise();
     const mapElement = document.getElementById(mapId);
 
     if (!mapElement) return null;
@@ -75,7 +75,7 @@ class MapsService {
       version: 'weekly',
     });
 
-    await loader.load();
+    await loader.loadPromise();
     const directionsService = new google.maps.DirectionsService();
 
     return new Promise((resolve, reject) => {
