@@ -1,0 +1,5 @@
+# Ignore backend folder for Vercel deployment
+backend/
+
+# Ignore root app folder if using frontend/
+app/
