@@ -4,6 +4,11 @@ import { useEffect, useRef } from 'react';
 class ChatService {
   private socket: Socket | null = null;
 
+  // Getter to access socket
+  getSocket() {
+    return this.socket;
+  }
+
   connect(userId: string) {
     if (this.socket?.connected) return;
 
@@ -71,7 +76,7 @@ export function useChat(userId: string) {
 
   useEffect(() => {
     chatService.connect(userId);
-    socketRef.current = chatService.socket;
+    socketRef.current = chatService.getSocket();
 
     return () => {
       chatService.disconnect();
