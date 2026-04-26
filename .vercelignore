@@ -1,15 +1,13 @@
-# Ignore backend folder for Vercel deployment
-../backend/
+# Ignore backend folder
+backend/
 
-# Ignore root level files/folders (except frontend)
-../app/
-../package.json
-../package-lock.json
-../next.config.ts
-../tsconfig.json
-../postcss.config.mjs
-../eslint.config.mjs
-../README.md
-../FIREBASE_SETUP.md
-../AGENTS.md
-../CLAUDE.md
+# Ignore root app folder
+app/
+
+# Ignore root level files
+package.json
+package-lock.json
+next.config.ts
+tsconfig.json
+postcss.config.mjs
+eslint.config.mjs
