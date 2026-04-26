@@ -1,13 +1,3 @@
-# Ignore backend folder
+# Ignore backend and root app folder
 backend/
-
-# Ignore root app folder
 app/
-
-# Ignore root level files
-package.json
-package-lock.json
-next.config.ts
-tsconfig.json
-postcss.config.mjs
-eslint.config.mjs
